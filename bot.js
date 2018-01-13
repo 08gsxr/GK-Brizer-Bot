@@ -54,4 +54,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === prefix + 'bri') {
+    msg.reply('Perk Up');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
